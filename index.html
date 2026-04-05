@@ -8,12 +8,20 @@
       name="description"
       content="A MN Solar oferece instalação e manutenção de energia solar, aquecedores solares, ar-condicionado e serviços elétricos residenciais em Serrania/MG. Fale conosco!"
     />
+    <!-- Segurança: restringe origens de scripts, estilos e fontes (CSP) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.web3forms.com; img-src 'self' data:; frame-ancestors 'none';"
+    />
+    <!-- Não envia URL completo como referrer para sites externos -->
+    <meta name="referrer" content="no-referrer-when-downgrade" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -376,6 +384,8 @@
             <input type="hidden" name="access_key" value="9e1de1a0-a302-46d0-a8a2-f2af0df19b44" />
             <input type="hidden" name="subject" value="Novo contato — MN Solar" />
             <input type="hidden" name="from_name" value="Site MN Solar" />
+            <!-- Honeypot anti-spam: bots preenchem, humanos não veem -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true" />
             <div class="form-row">
               <div class="form-group">
                 <label for="nome">Nome completo</label>
