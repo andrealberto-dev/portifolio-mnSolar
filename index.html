@@ -13,8 +13,8 @@
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav id="navbar">
-    <a href="#hero" class="nav-brand">mn<span style="color:#fff;-webkit-text-fill-color:#fff;">Solar</span></a>
+  <nav id="navbar" aria-label="Navegação principal">
+    <a href="#hero" class="nav-brand">mnSolar</a>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero">Início</a></li>
@@ -24,21 +24,27 @@
       <li><a href="#contato" class="nav-cta">Solicitar Orçamento</a></li>
     </ul>
 
-    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Abrir menu de navegação"
+      aria-controls="navLinks"
+      aria-expanded="false"
+    >
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section id="hero">
-    <div class="hero-bg"></div>
+  <section id="hero" aria-labelledby="hero-titulo">
+    <div class="hero-bg" aria-hidden="true"></div>
 
     <div class="hero-content">
       <div class="hero-badge">
-        <span>☀</span> Energia Limpa &amp; Renovável
+        <span aria-hidden="true">☀</span> Energia Limpa &amp; Renovável
       </div>
 
-      <h1 class="hero-title">
+      <h1 id="hero-titulo" class="hero-title">
         O sol trabalha<br/>para <em>você</em> 24h por dia
       </h1>
 
@@ -49,41 +55,60 @@
 
       <div class="hero-actions">
         <a href="#contato" class="btn-primary">
-          ⚡ Solicitar Orçamento Grátis
+          <span aria-hidden="true">⚡</span> Solicitar Orçamento Grátis
         </a>
         <a href="#servicos" class="btn-outline">
-          Ver Serviços →
+          Ver Serviços <span aria-hidden="true">→</span>
         </a>
       </div>
 
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-value" data-target="500">0</span>
-          <span class="stat-label">Projetos Concluídos</span>
+          <span
+            class="stat-value"
+            data-target="500"
+            aria-label="Mais de 500 projetos concluídos"
+          >0</span>
+          <span class="stat-label" aria-hidden="true">Projetos Concluídos</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="95" data-suffix="%">0%</span>
-          <span class="stat-label">Redução na Conta</span>
+          <span
+            class="stat-value"
+            data-target="95"
+            data-suffix="%"
+            aria-label="Até 95% de redução na conta de energia"
+          >0%</span>
+          <span class="stat-label" aria-hidden="true">Redução na Conta</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="12" data-suffix=" anos">0 anos</span>
-          <span class="stat-label">De Experiência</span>
+          <span
+            class="stat-value"
+            data-target="12"
+            data-suffix=" anos"
+            aria-label="12 anos de experiência"
+          >0 anos</span>
+          <span class="stat-label" aria-hidden="true">De Experiência</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value" data-target="25" data-suffix=" anos">0 anos</span>
-          <span class="stat-label">Garantia dos Painéis</span>
+          <span
+            class="stat-value"
+            data-target="25"
+            data-suffix=" anos"
+            aria-label="25 anos de garantia dos painéis"
+          >0 anos</span>
+          <span class="stat-label" aria-hidden="true">Garantia dos Painéis</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== SOBRE ===== -->
-  <section id="sobre">
+  <section id="sobre" aria-labelledby="sobre-titulo">
     <div class="about-grid">
 
       <div class="about-visual reveal-left">
         <div class="about-panel">
-          <div class="solar-icon-wrap">☀️</div>
+          <div class="solar-icon-wrap" aria-hidden="true">☀️</div>
           <h3>Por que escolher energia solar?</h3>
           <p>
             A energia solar fotovoltaica é a fonte renovável que mais cresce no Brasil.
@@ -97,7 +122,14 @@
                 <span>Economia Média Anual</span>
                 <span>até R$ 8.400</span>
               </div>
-              <div class="progress-bar">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Economia Média Anual: 88%"
+              >
                 <div class="progress-fill" data-width="88"></div>
               </div>
             </div>
@@ -106,7 +138,14 @@
                 <span>Eficiência dos Painéis</span>
                 <span>23%</span>
               </div>
-              <div class="progress-bar">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="92"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Eficiência dos Painéis: 92%"
+              >
                 <div class="progress-fill" data-width="92"></div>
               </div>
             </div>
@@ -115,7 +154,14 @@
                 <span>Satisfação dos Clientes</span>
                 <span>98%</span>
               </div>
-              <div class="progress-bar">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="98"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Satisfação dos Clientes: 98%"
+              >
                 <div class="progress-fill" data-width="98"></div>
               </div>
             </div>
@@ -124,8 +170,8 @@
       </div>
 
       <div class="about-text reveal-right">
-        <span class="section-label">Sobre nós</span>
-        <h2 class="section-title">Energia que transforma vidas e negócios</h2>
+        <span class="section-label" aria-hidden="true">Sobre nós</span>
+        <h2 id="sobre-titulo" class="section-title">Energia que transforma vidas e negócios</h2>
         <p class="section-desc">
           Desde 2012, a mnSolar projeta, fornece e instala sistemas de energia solar
           em todo o Brasil. Somos especializados em soluções sob medida para residências,
@@ -135,21 +181,21 @@
 
         <div class="about-features">
           <div class="feature-item">
-            <div class="feature-icon">🏅</div>
+            <div class="feature-icon" aria-hidden="true">🏅</div>
             <div class="feature-text">
               <h4>Certificação INMETRO &amp; IEC</h4>
               <p>Todos os nossos equipamentos seguem os mais rígidos padrões internacionais de qualidade.</p>
             </div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">📡</div>
+            <div class="feature-icon" aria-hidden="true">📡</div>
             <div class="feature-text">
               <h4>Monitoramento Remoto 24/7</h4>
               <p>Acompanhe a produção do seu sistema em tempo real pelo app ou navegador.</p>
             </div>
           </div>
           <div class="feature-item">
-            <div class="feature-icon">🔧</div>
+            <div class="feature-icon" aria-hidden="true">🔧</div>
             <div class="feature-text">
               <h4>Suporte Técnico Especializado</h4>
               <p>Equipe pronta para atender, manter e otimizar seu sistema quando precisar.</p>
@@ -162,11 +208,11 @@
   </section>
 
   <!-- ===== SERVIÇOS ===== -->
-  <section id="servicos">
+  <section id="servicos" aria-labelledby="servicos-titulo">
     <div class="services-header reveal">
-      <span class="section-label">O que fazemos</span>
-      <h2 class="section-title">Soluções completas em energia solar</h2>
-      <p class="section-desc" style="margin:0 auto;">
+      <span class="section-label" aria-hidden="true">O que fazemos</span>
+      <h2 id="servicos-titulo" class="section-title">Soluções completas em energia solar</h2>
+      <p class="section-desc">
         Do projeto à instalação, entregamos sistemas que geram energia limpa e
         economia real para cada perfil de cliente.
       </p>
@@ -175,14 +221,14 @@
     <div class="services-grid">
 
       <div class="service-card reveal">
-        <div class="service-number">01</div>
-        <div class="service-icon">🏠</div>
+        <div class="service-number" aria-hidden="true">01</div>
+        <div class="service-icon" aria-hidden="true">🏠</div>
         <h3>Solar Residencial</h3>
         <p>
           Sistemas dimensionados para sua casa, com retorno do investimento em
           3 a 5 anos e economia de até 95% na conta de energia.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: Instalação rápida, Financiamento, Monitoramento">
           <span class="tag">Instalação rápida</span>
           <span class="tag">Financiamento</span>
           <span class="tag">Monitoramento</span>
@@ -190,14 +236,14 @@
       </div>
 
       <div class="service-card featured reveal">
-        <div class="service-number">02</div>
-        <div class="service-icon">🏢</div>
+        <div class="service-number" aria-hidden="true">02</div>
+        <div class="service-icon" aria-hidden="true">🏢</div>
         <h3>Solar Comercial &amp; Industrial</h3>
         <p>
           Projetos de grande porte para empresas e indústrias que buscam
           redução significativa nos custos operacionais e sustentabilidade.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: Alta potência, Projeto personalizado, CAPEX/OPEX">
           <span class="tag">Alta potência</span>
           <span class="tag">Projeto personalizado</span>
           <span class="tag">CAPEX/OPEX</span>
@@ -205,14 +251,14 @@
       </div>
 
       <div class="service-card reveal">
-        <div class="service-number">03</div>
-        <div class="service-icon">🔋</div>
+        <div class="service-number" aria-hidden="true">03</div>
+        <div class="service-icon" aria-hidden="true">🔋</div>
         <h3>Armazenamento de Energia</h3>
         <p>
           Baterias de última geração para armazenar o excedente solar e garantir
           energia mesmo à noite ou em dias nublados.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: Lítio-Ion, Off-grid, Autonomia 24h">
           <span class="tag">Lítio-Ion</span>
           <span class="tag">Off-grid</span>
           <span class="tag">Autonomia 24h</span>
@@ -220,14 +266,14 @@
       </div>
 
       <div class="service-card reveal">
-        <div class="service-number">04</div>
-        <div class="service-icon">🚗</div>
+        <div class="service-number" aria-hidden="true">04</div>
+        <div class="service-icon" aria-hidden="true">🚗</div>
         <h3>Carregador Solar para EVs</h3>
         <p>
           Integre seu carregador de veículo elétrico ao sistema fotovoltaico e
           abasteça seu carro com energia 100% solar e gratuita.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: EV Charging, Wallbox, Smart Home">
           <span class="tag">EV Charging</span>
           <span class="tag">Wallbox</span>
           <span class="tag">Smart Home</span>
@@ -235,14 +281,14 @@
       </div>
 
       <div class="service-card reveal">
-        <div class="service-number">05</div>
-        <div class="service-icon">📊</div>
+        <div class="service-number" aria-hidden="true">05</div>
+        <div class="service-icon" aria-hidden="true">📊</div>
         <h3>Consultoria &amp; Estudo de Viabilidade</h3>
         <p>
           Análise técnica e financeira detalhada para verificar o potencial
           solar da sua propriedade e calcular o retorno exato do investimento.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: Laudo técnico, Simulação financeira, Gratuito">
           <span class="tag">Laudo técnico</span>
           <span class="tag">Simulação financeira</span>
           <span class="tag">Gratuito</span>
@@ -250,14 +296,14 @@
       </div>
 
       <div class="service-card reveal">
-        <div class="service-number">06</div>
-        <div class="service-icon">🛠</div>
+        <div class="service-number" aria-hidden="true">06</div>
+        <div class="service-icon" aria-hidden="true">🛠</div>
         <h3>Manutenção &amp; O&amp;M</h3>
         <p>
           Serviços de operação e manutenção preventiva e corretiva para
           garantir o desempenho máximo do seu sistema ao longo de toda a sua vida útil.
         </p>
-        <div class="service-tags">
+        <div class="service-tags" aria-label="Tags: Limpeza de painéis, Termografia, Relatórios">
           <span class="tag">Limpeza de painéis</span>
           <span class="tag">Termografia</span>
           <span class="tag">Relatórios</span>
@@ -268,66 +314,94 @@
   </section>
 
   <!-- ===== CONTATO ===== -->
-  <section id="contato">
+  <section id="contato" aria-labelledby="contato-titulo">
     <div class="contact-grid">
 
       <div class="contact-info reveal-left">
-        <span class="section-label">Fale conosco</span>
-        <h2 class="section-title">Pronto para começar a economizar?</h2>
+        <span class="section-label" aria-hidden="true">Fale conosco</span>
+        <h2 id="contato-titulo" class="section-title">Pronto para começar a economizar?</h2>
         <p class="section-desc">
           Preencha o formulário ou entre em contato diretamente. Nossa equipe
           responde em até 2 horas úteis com uma proposta personalizada.
         </p>
 
-        <div class="contact-items">
+        <address class="contact-items">
           <div class="contact-item">
-            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-icon" aria-hidden="true">📍</div>
             <div class="contact-item-text">
               <span>Endereço</span>
               <strong>Av. Solar, 1200 — São Paulo, SP</strong>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-icon" aria-hidden="true">📞</div>
             <div class="contact-item-text">
               <span>Telefone &amp; WhatsApp</span>
-              <strong>(11) 98765-4321</strong>
+              <a href="tel:+5511987654321">(11) 98765-4321</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-icon" aria-hidden="true">✉️</div>
             <div class="contact-item-text">
               <span>E-mail</span>
-              <strong>contato@mnsolar.com.br</strong>
+              <a href="mailto:contato@mnsolar.com.br">contato@mnsolar.com.br</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">🕐</div>
+            <div class="contact-item-icon" aria-hidden="true">🕐</div>
             <div class="contact-item-text">
               <span>Horário de Atendimento</span>
               <strong>Seg–Sex, 08h–18h</strong>
             </div>
           </div>
-        </div>
+        </address>
       </div>
 
       <div class="contact-form-wrap reveal-right">
-        <form id="contactForm" novalidate>
+        <form id="contactForm" novalidate aria-label="Formulário de contato">
           <div class="form-row">
             <div class="form-group">
               <label for="nome">Nome completo</label>
-              <input type="text" id="nome" name="nome" placeholder="João Silva" required />
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="João Silva"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="nome-error"
+                aria-invalid="false"
+              />
+              <span id="nome-error" class="field-error" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="joao@email.com" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="joao@email.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                aria-invalid="false"
+              />
+              <span id="email-error" class="field-error" role="alert"></span>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="telefone">Telefone / WhatsApp</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000" />
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 9 0000-0000"
+                autocomplete="tel"
+              />
             </div>
             <div class="form-group">
               <label for="tipo">Tipo de instalação</label>
@@ -344,16 +418,27 @@
 
           <div class="form-group">
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre seu projeto — consumo mensal estimado, área disponível, etc."></textarea>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Conte um pouco sobre seu projeto — consumo mensal estimado, área disponível, etc."
+              autocomplete="off"
+              maxlength="1000"
+            ></textarea>
           </div>
 
           <button type="submit" class="form-submit">
-            ☀ Enviar Mensagem
+            <span aria-hidden="true">☀</span> Enviar Mensagem
           </button>
 
-          <div class="toast" id="toast">
-            ✅ Mensagem enviada! Entraremos em contato em breve.
-          </div>
+          <!-- Sempre no DOM; aria-live anuncia mudanças para leitores de tela -->
+          <div
+            class="toast"
+            id="toast"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
         </form>
       </div>
 
@@ -361,8 +446,8 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer>
-    <span class="footer-brand">mnSolar</span>
+  <footer role="contentinfo">
+    <a href="#hero" class="footer-brand">mnSolar</a>
     <p class="footer-copy">© 2026 mnSolar. Todos os direitos reservados.</p>
     <ul class="footer-links">
       <li><a href="#hero">Início</a></li>
@@ -384,16 +469,39 @@
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('navLinks');
 
+    function openMenu() {
+      hamburger.classList.add('open');
+      navLinks.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Fechar menu de navegação');
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
+    }
+
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open');
+      if (hamburger.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
+    // Fecha com Escape e devolve foco ao botão
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && hamburger.classList.contains('open')) {
+        closeMenu();
+        hamburger.focus();
+      }
+    });
+
+    // Fecha ao clicar em qualquer link do menu
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
-      });
+      link.addEventListener('click', closeMenu);
     });
 
     // ── Intersection Observer (reveal animations) ─────────────
@@ -401,11 +509,9 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Animate progress bars if inside revealed element
           entry.target.querySelectorAll('.progress-fill').forEach(bar => {
             bar.style.width = bar.dataset.width + '%';
           });
-          // Start counters if stat-value found
           entry.target.querySelectorAll('[data-target]').forEach(el => {
             animateCounter(el);
           });
@@ -418,7 +524,7 @@
       revealObserver.observe(el);
     });
 
-    // Also observe the hero stats section (not wrapped in reveal class)
+    // Observa stats do hero
     const heroStats = document.querySelector('.hero-stats');
     if (heroStats) {
       const statsObserver = new IntersectionObserver((entries) => {
@@ -432,16 +538,23 @@
 
     // ── Counter animation ─────────────────────────────────────
     function animateCounter(el) {
-      const target  = parseInt(el.dataset.target, 10);
-      const suffix  = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
+      // Respeita prefers-reduced-motion
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
+        el.textContent = target + suffix;
+        return;
+      }
+
+      const target   = parseInt(el.dataset.target, 10);
+      const suffix   = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
       const duration = 1600;
       const start    = performance.now();
 
       function update(now) {
         const elapsed  = now - start;
         const progress = Math.min(elapsed / duration, 1);
-        // Ease out cubic
-        const eased = 1 - Math.pow(1 - progress, 3);
+        const eased    = 1 - Math.pow(1 - progress, 3);
         el.textContent = Math.round(eased * target) + suffix;
         if (progress < 1) requestAnimationFrame(update);
       }
@@ -452,38 +565,64 @@
     const form  = document.getElementById('contactForm');
     const toast = document.getElementById('toast');
 
+    function setFieldError(input, errorId, message) {
+      const errorEl = document.getElementById(errorId);
+      input.setAttribute('aria-invalid', message ? 'true' : 'false');
+      errorEl.textContent = message;
+    }
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+        // Limpa após a transição para não reanunciar
+        setTimeout(() => { toast.textContent = ''; }, 350);
+      }, 5000);
+    }
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const nome  = form.nome.value.trim();
-      const email = form.email.value.trim();
+      const nomeInput  = form.nome;
+      const emailInput = form.email;
+      const nome  = nomeInput.value.trim();
+      const email = emailInput.value.trim();
+      let valid = true;
 
-      if (!nome || !email) {
-        form.nome.style.borderColor  = nome  ? '' : 'rgba(255,80,80,0.5)';
-        form.email.style.borderColor = email ? '' : 'rgba(255,80,80,0.5)';
-        return;
+      if (!nome) {
+        setFieldError(nomeInput, 'nome-error', 'Por favor, informe seu nome.');
+        valid = false;
+      } else {
+        setFieldError(nomeInput, 'nome-error', '');
       }
 
-      // Reset error borders
-      form.nome.style.borderColor  = '';
-      form.email.style.borderColor = '';
+      if (!email || !emailInput.validity.valid) {
+        setFieldError(emailInput, 'email-error', 'Por favor, informe um e-mail válido.');
+        valid = false;
+      } else {
+        setFieldError(emailInput, 'email-error', '');
+      }
 
-      // Simulate sending (replace with real fetch/API call)
+      if (!valid) return;
+
       const btn = form.querySelector('.form-submit');
       btn.textContent = '⏳ Enviando...';
       btn.disabled = true;
 
+      // Substituir pelo fetch/API real em produção
       setTimeout(() => {
-        btn.textContent = '☀ Enviar Mensagem';
+        btn.innerHTML = '<span aria-hidden="true">☀</span> Enviar Mensagem';
         btn.disabled = false;
-        toast.classList.add('show');
+        showToast('✅ Mensagem enviada! Entraremos em contato em breve.');
         form.reset();
-        setTimeout(() => toast.classList.remove('show'), 5000);
+        // Limpa aria-invalid após reset
+        [nomeInput, emailInput].forEach(el => el.setAttribute('aria-invalid', 'false'));
       }, 1200);
     });
 
     // ── Smooth active link highlight on scroll ────────────────
-    const sections = document.querySelectorAll('section[id]');
+    const sections   = document.querySelectorAll('section[id]');
     const navAnchors = document.querySelectorAll('.nav-links a:not(.nav-cta)');
 
     const sectionObserver = new IntersectionObserver((entries) => {
