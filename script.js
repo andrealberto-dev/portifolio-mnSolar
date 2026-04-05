@@ -175,16 +175,31 @@ form.addEventListener("submit", (e) => {
   btn.textContent = "⏳ Enviando...";
   btn.disabled = true;
 
-  // Substituir pelo fetch/API real em produção
-  setTimeout(() => {
-    btn.innerHTML = '<span aria-hidden="true">☀</span> Enviar Mensagem';
-    btn.disabled = false;
-    showToast("✅ Mensagem enviada! Entraremos em contato em breve.");
-    form.reset();
-    [nomeInput, emailInput].forEach((el) =>
-      el.setAttribute("aria-invalid", "false"),
-    );
-  }, 1200);
+  const data = new FormData(form);
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: data,
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      if (res.success) {
+        showToast("✅ Mensagem enviada! Entraremos em contato em breve.");
+        form.reset();
+        [nomeInput, emailInput].forEach((el) =>
+          el.setAttribute("aria-invalid", "false"),
+        );
+      } else {
+        showToast("❌ Erro ao enviar. Tente novamente ou use o WhatsApp.");
+      }
+    })
+    .catch(() => {
+      showToast("❌ Erro de conexão. Tente novamente ou use o WhatsApp.");
+    })
+    .finally(() => {
+      btn.innerHTML = '<span aria-hidden="true">☀</span> Enviar Mensagem';
+      btn.disabled = false;
+    });
 });
 
 // ── Active link highlight on scroll ──────────────────────
