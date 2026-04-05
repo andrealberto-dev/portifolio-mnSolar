@@ -1,0 +1,31 @@
+/* ===== VARIABLES ===== */
+:root {
+  /* Colors */
+  --gold: #f5a623;
+  --gold-light: #ffd166;
+  --gold-dark: #e08a00;
+  --amber: #ff8c00;
+
+  /* Backgrounds */
+  --bg-dark: #0d0d0d;
+  --bg-card: #161616;
+  --bg-section: #111111;
+
+  /* Text — contraste mínimo WCAG AA garantido sobre --bg-dark */
+  --text-primary: #f0f0f0;
+  --text-muted: #999;
+  --text-dim: #777; /* ratio 4.73:1 on #0D0D0D */
+
+  /* Borders */
+  --border: rgba(245, 166, 35, 0.15);
+
+  /* Radius */
+  --radius: 12px;
+  --radius-lg: 20px;
+
+  /* Transitions */
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --nav-h: 72px;
+}

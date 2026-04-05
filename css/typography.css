@@ -1,0 +1,57 @@
+/* ===== TYPOGRAPHY ===== */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+/* Section labels (small uppercase eyebrow text) */
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+/* Section headings */
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+/* Section body copy */
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+/* Gradient text utility (with solid color fallback for high-contrast mode) */
+.gradient-text {
+  color: var(--gold-light); /* fallback */
+  background: linear-gradient(135deg, var(--gold-light), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
