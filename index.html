@@ -1,643 +1,615 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mnSolar — Energia Solar Inteligente</title>
-  <meta name="description" content="A mnSolar oferece soluções completas em energia solar fotovoltaica para residências, empresas e indústrias. Economize na conta de luz e invista em energia limpa." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MN Solar — Energia Solar Inteligente</title>
+    <meta
+      name="description"
+      content="A MN Solar oferece instalação e manutenção de energia solar, aquecedores solares, ar-condicionado e serviços elétricos residenciais em Serrania/MG. Fale conosco!"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" aria-label="Navegação principal">
+      <a href="#hero" class="nav-brand">MN Solar</a>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav id="navbar" aria-label="Navegação principal">
-    <a href="#hero" class="nav-brand">mnSolar</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato" class="nav-cta">Solicitar Orçamento</a></li>
+      </ul>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#hero">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="#contato" class="nav-cta">Solicitar Orçamento</a></li>
-    </ul>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-    <button
-      class="hamburger"
-      id="hamburger"
-      aria-label="Abrir menu de navegação"
-      aria-controls="navLinks"
-      aria-expanded="false"
-    >
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-labelledby="hero-titulo">
+      <div class="hero-bg" aria-hidden="true"></div>
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" aria-labelledby="hero-titulo">
-    <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span aria-hidden="true">☀</span> Energia Limpa &amp; Renovável
+        </div>
 
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span aria-hidden="true">☀</span> Energia Limpa &amp; Renovável
+        <h1 id="hero-titulo" class="hero-title">
+          Conforto, economia<br />e <em>energia limpa</em> para você
+        </h1>
+
+        <p class="hero-subtitle">
+          Instalação e manutenção de energia solar, aquecedores solares,
+          ar-condicionado e serviços elétricos residenciais em Serrania/MG e região.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contato" class="btn-primary">
+            <span aria-hidden="true">⚡</span> Solicitar Orçamento Grátis
+          </a>
+          <a href="#servicos" class="btn-outline">
+            Ver Serviços <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span
+              class="stat-value"
+              data-target="14"
+              data-suffix=" anos"
+              aria-label="14 anos de experiência"
+            >0 anos</span>
+            <span class="stat-label" aria-hidden="true">De Experiência</span>
+          </div>
+          <div class="stat-item">
+            <span
+              class="stat-value"
+              data-target="6"
+              data-suffix=" anos"
+              aria-label="6 anos em energia solar"
+            >0 anos</span>
+            <span class="stat-label" aria-hidden="true">Em Energia Solar</span>
+          </div>
+          <div class="stat-item">
+            <span
+              class="stat-value"
+              data-target="95"
+              data-suffix="%"
+              aria-label="Até 95% de redução na conta de energia"
+            >0%</span>
+            <span class="stat-label" aria-hidden="true">Redução na Conta</span>
+          </div>
+          <div class="stat-item">
+            <span
+              class="stat-value"
+              data-target="25"
+              data-suffix=" anos"
+              aria-label="25 anos de garantia dos painéis"
+            >0 anos</span>
+            <span class="stat-label" aria-hidden="true">Garantia dos Painéis</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h1 id="hero-titulo" class="hero-title">
-        O sol trabalha<br/>para <em>você</em> 24h por dia
-      </h1>
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" aria-labelledby="sobre-titulo">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-panel">
+            <div class="solar-icon-wrap" aria-hidden="true">☀️</div>
+            <h3>Tradição e qualidade que você pode confiar</h3>
+            <p>
+              Com mais de uma década de atuação, a MN Solar acumulou experiência
+              e confiança para oferecer soluções completas em energia solar,
+              aquecimento e climatização para famílias e negócios da região.
+            </p>
 
-      <p class="hero-subtitle">
-        Reduza até 95% da sua conta de energia com sistemas fotovoltaicos
-        de alta eficiência. Tecnologia premium, instalação rápida e retorno garantido.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#contato" class="btn-primary">
-          <span aria-hidden="true">⚡</span> Solicitar Orçamento Grátis
-        </a>
-        <a href="#servicos" class="btn-outline">
-          Ver Serviços <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span
-            class="stat-value"
-            data-target="500"
-            aria-label="Mais de 500 projetos concluídos"
-          >0</span>
-          <span class="stat-label" aria-hidden="true">Projetos Concluídos</span>
+            <div class="progress-list">
+              <div class="progress-item">
+                <div class="progress-head">
+                  <span>Aquecedores Solares</span>
+                  <span>14 anos</span>
+                </div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-label="14 anos de experiência em aquecedores solares"
+                >
+                  <div class="progress-fill" data-width="95"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-head">
+                  <span>Energia Solar Fotovoltaica</span>
+                  <span>6 anos</span>
+                </div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-label="6 anos de experiência em energia solar fotovoltaica"
+                >
+                  <div class="progress-fill" data-width="70"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-head">
+                  <span>Ar-condicionado &amp; Elétrica</span>
+                  <span>6 anos</span>
+                </div>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-label="6 anos de experiência em ar-condicionado e elétrica"
+                >
+                  <div class="progress-fill" data-width="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stat-item">
-          <span
-            class="stat-value"
-            data-target="95"
-            data-suffix="%"
-            aria-label="Até 95% de redução na conta de energia"
-          >0%</span>
-          <span class="stat-label" aria-hidden="true">Redução na Conta</span>
-        </div>
-        <div class="stat-item">
-          <span
-            class="stat-value"
-            data-target="12"
-            data-suffix=" anos"
-            aria-label="12 anos de experiência"
-          >0 anos</span>
-          <span class="stat-label" aria-hidden="true">De Experiência</span>
-        </div>
-        <div class="stat-item">
-          <span
-            class="stat-value"
-            data-target="25"
-            data-suffix=" anos"
-            aria-label="25 anos de garantia dos painéis"
-          >0 anos</span>
-          <span class="stat-label" aria-hidden="true">Garantia dos Painéis</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== SOBRE ===== -->
-  <section id="sobre" aria-labelledby="sobre-titulo">
-    <div class="about-grid">
-
-      <div class="about-visual reveal-left">
-        <div class="about-panel">
-          <div class="solar-icon-wrap" aria-hidden="true">☀️</div>
-          <h3>Por que escolher energia solar?</h3>
-          <p>
-            A energia solar fotovoltaica é a fonte renovável que mais cresce no Brasil.
-            Com a mnSolar, você tem acesso a painéis de última geração e a melhor
-            tecnologia de inversores do mercado.
+        <div class="about-text reveal-right">
+          <span class="section-label" aria-hidden="true">Sobre nós</span>
+          <h2 id="sobre-titulo" class="section-title">
+            Mais de 14 anos cuidando do seu lar e da sua economia
+          </h2>
+          <p class="section-desc">
+            A MN Solar nasceu do compromisso com a qualidade e com o bem-estar
+            das famílias de Serrania e região. Há 14 anos instalamos e
+            mantemos aquecedores solares, tornando o banho quente acessível
+            e econômico para centenas de residências.
           </p>
 
-          <div class="progress-list">
-            <div class="progress-item">
-              <div class="progress-head">
-                <span>Economia Média Anual</span>
-                <span>até R$ 8.400</span>
-              </div>
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="88"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                aria-label="Economia Média Anual: 88%"
-              >
-                <div class="progress-fill" data-width="88"></div>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🌱</div>
+              <div class="feature-text">
+                <h4>Referência regional em energia solar</h4>
+                <p>Com 6 anos de atuação em painéis fotovoltaicos, somos referência na instalação e manutenção de sistemas de energia solar na região de Serrania/MG.</p>
               </div>
             </div>
-            <div class="progress-item">
-              <div class="progress-head">
-                <span>Eficiência dos Painéis</span>
-                <span>23%</span>
-              </div>
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="92"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                aria-label="Eficiência dos Painéis: 92%"
-              >
-                <div class="progress-fill" data-width="92"></div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🤝</div>
+              <div class="feature-text">
+                <h4>Atendimento próximo e personalizado</h4>
+                <p>Somos uma empresa local, com atendimento direto, sem intermediários. Cada projeto é tratado com atenção e cuidado do início ao fim.</p>
               </div>
             </div>
-            <div class="progress-item">
-              <div class="progress-head">
-                <span>Satisfação dos Clientes</span>
-                <span>98%</span>
-              </div>
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="98"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                aria-label="Satisfação dos Clientes: 98%"
-              >
-                <div class="progress-fill" data-width="98"></div>
+            <div class="feature-item">
+              <div class="feature-icon" aria-hidden="true">🔧</div>
+              <div class="feature-text">
+                <h4>Soluções completas em um só lugar</h4>
+                <p>Da energia solar ao ar-condicionado e elétrica residencial, resolvemos tudo com a mesma equipe de confiança que já atende sua família.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="about-text reveal-right">
-        <span class="section-label" aria-hidden="true">Sobre nós</span>
-        <h2 id="sobre-titulo" class="section-title">Energia que transforma vidas e negócios</h2>
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="servicos" aria-labelledby="servicos-titulo">
+      <div class="services-header reveal">
+        <span class="section-label" aria-hidden="true">O que fazemos</span>
+        <h2 id="servicos-titulo" class="section-title">Soluções completas para o seu lar</h2>
         <p class="section-desc">
-          Desde 2012, a mnSolar projeta, fornece e instala sistemas de energia solar
-          em todo o Brasil. Somos especializados em soluções sob medida para residências,
-          comércios e grandes indústrias — sempre com foco em máxima eficiência e retorno
-          rápido sobre o investimento.
+          Da energia solar ao ar-condicionado, oferecemos instalação, manutenção
+          e suporte técnico com qualidade e compromisso.
         </p>
+      </div>
 
-        <div class="about-features">
-          <div class="feature-item">
-            <div class="feature-icon" aria-hidden="true">🏅</div>
-            <div class="feature-text">
-              <h4>Certificação INMETRO &amp; IEC</h4>
-              <p>Todos os nossos equipamentos seguem os mais rígidos padrões internacionais de qualidade.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon" aria-hidden="true">📡</div>
-            <div class="feature-text">
-              <h4>Monitoramento Remoto 24/7</h4>
-              <p>Acompanhe a produção do seu sistema em tempo real pelo app ou navegador.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon" aria-hidden="true">🔧</div>
-            <div class="feature-text">
-              <h4>Suporte Técnico Especializado</h4>
-              <p>Equipe pronta para atender, manter e otimizar seu sistema quando precisar.</p>
-            </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-number" aria-hidden="true">01</div>
+          <div class="service-icon" aria-hidden="true">❄️</div>
+          <h3>Ar-condicionado</h3>
+          <p>
+            Instalação, manutenção preventiva e corretiva, e higienização
+            completa de ar-condicionado para garantir conforto e qualidade
+            do ar na sua casa ou comércio.
+          </p>
+          <div class="service-tags" aria-label="Tags: Instalação, Manutenção, Higienização">
+            <span class="tag">Instalação</span>
+            <span class="tag">Manutenção</span>
+            <span class="tag">Higienização</span>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- ===== SERVIÇOS ===== -->
-  <section id="servicos" aria-labelledby="servicos-titulo">
-    <div class="services-header reveal">
-      <span class="section-label" aria-hidden="true">O que fazemos</span>
-      <h2 id="servicos-titulo" class="section-title">Soluções completas em energia solar</h2>
-      <p class="section-desc">
-        Do projeto à instalação, entregamos sistemas que geram energia limpa e
-        economia real para cada perfil de cliente.
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <div class="service-card reveal">
-        <div class="service-number" aria-hidden="true">01</div>
-        <div class="service-icon" aria-hidden="true">🏠</div>
-        <h3>Solar Residencial</h3>
-        <p>
-          Sistemas dimensionados para sua casa, com retorno do investimento em
-          3 a 5 anos e economia de até 95% na conta de energia.
-        </p>
-        <div class="service-tags" aria-label="Tags: Instalação rápida, Financiamento, Monitoramento">
-          <span class="tag">Instalação rápida</span>
-          <span class="tag">Financiamento</span>
-          <span class="tag">Monitoramento</span>
-        </div>
-      </div>
-
-      <div class="service-card featured reveal">
-        <div class="service-number" aria-hidden="true">02</div>
-        <div class="service-icon" aria-hidden="true">🏢</div>
-        <h3>Solar Comercial &amp; Industrial</h3>
-        <p>
-          Projetos de grande porte para empresas e indústrias que buscam
-          redução significativa nos custos operacionais e sustentabilidade.
-        </p>
-        <div class="service-tags" aria-label="Tags: Alta potência, Projeto personalizado, CAPEX/OPEX">
-          <span class="tag">Alta potência</span>
-          <span class="tag">Projeto personalizado</span>
-          <span class="tag">CAPEX/OPEX</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-number" aria-hidden="true">03</div>
-        <div class="service-icon" aria-hidden="true">🔋</div>
-        <h3>Armazenamento de Energia</h3>
-        <p>
-          Baterias de última geração para armazenar o excedente solar e garantir
-          energia mesmo à noite ou em dias nublados.
-        </p>
-        <div class="service-tags" aria-label="Tags: Lítio-Ion, Off-grid, Autonomia 24h">
-          <span class="tag">Lítio-Ion</span>
-          <span class="tag">Off-grid</span>
-          <span class="tag">Autonomia 24h</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-number" aria-hidden="true">04</div>
-        <div class="service-icon" aria-hidden="true">🚗</div>
-        <h3>Carregador Solar para EVs</h3>
-        <p>
-          Integre seu carregador de veículo elétrico ao sistema fotovoltaico e
-          abasteça seu carro com energia 100% solar e gratuita.
-        </p>
-        <div class="service-tags" aria-label="Tags: EV Charging, Wallbox, Smart Home">
-          <span class="tag">EV Charging</span>
-          <span class="tag">Wallbox</span>
-          <span class="tag">Smart Home</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-number" aria-hidden="true">05</div>
-        <div class="service-icon" aria-hidden="true">📊</div>
-        <h3>Consultoria &amp; Estudo de Viabilidade</h3>
-        <p>
-          Análise técnica e financeira detalhada para verificar o potencial
-          solar da sua propriedade e calcular o retorno exato do investimento.
-        </p>
-        <div class="service-tags" aria-label="Tags: Laudo técnico, Simulação financeira, Gratuito">
-          <span class="tag">Laudo técnico</span>
-          <span class="tag">Simulação financeira</span>
-          <span class="tag">Gratuito</span>
-        </div>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-number" aria-hidden="true">06</div>
-        <div class="service-icon" aria-hidden="true">🛠</div>
-        <h3>Manutenção &amp; O&amp;M</h3>
-        <p>
-          Serviços de operação e manutenção preventiva e corretiva para
-          garantir o desempenho máximo do seu sistema ao longo de toda a sua vida útil.
-        </p>
-        <div class="service-tags" aria-label="Tags: Limpeza de painéis, Termografia, Relatórios">
-          <span class="tag">Limpeza de painéis</span>
-          <span class="tag">Termografia</span>
-          <span class="tag">Relatórios</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CONTATO ===== -->
-  <section id="contato" aria-labelledby="contato-titulo">
-    <div class="contact-grid">
-
-      <div class="contact-info reveal-left">
-        <span class="section-label" aria-hidden="true">Fale conosco</span>
-        <h2 id="contato-titulo" class="section-title">Pronto para começar a economizar?</h2>
-        <p class="section-desc">
-          Preencha o formulário ou entre em contato diretamente. Nossa equipe
-          responde em até 2 horas úteis com uma proposta personalizada.
-        </p>
-
-        <address class="contact-items">
-          <div class="contact-item">
-            <div class="contact-item-icon" aria-hidden="true">📍</div>
-            <div class="contact-item-text">
-              <span>Endereço</span>
-              <strong>Av. Solar, 1200 — São Paulo, SP</strong>
-            </div>
+        <div class="service-card featured reveal">
+          <div class="service-number" aria-hidden="true">02</div>
+          <div class="service-icon" aria-hidden="true">🌡️</div>
+          <h3>Aquecedores Solares</h3>
+          <p>
+            Instalação e manutenção de aquecedores solares com 14 anos de
+            experiência. Reduza o consumo de energia elétrica e tenha
+            água quente o dia todo de forma econômica e sustentável.
+          </p>
+          <div class="service-tags" aria-label="Tags: 14 anos de experiência, Economia, Sustentável">
+            <span class="tag">14 anos de experiência</span>
+            <span class="tag">Economia</span>
+            <span class="tag">Sustentável</span>
           </div>
-          <div class="contact-item">
-            <div class="contact-item-icon" aria-hidden="true">📞</div>
-            <div class="contact-item-text">
-              <span>Telefone &amp; WhatsApp</span>
-              <a href="tel:+5511987654321">(11) 98765-4321</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon" aria-hidden="true">✉️</div>
-            <div class="contact-item-text">
-              <span>E-mail</span>
-              <a href="mailto:contato@mnsolar.com.br">contato@mnsolar.com.br</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon" aria-hidden="true">🕐</div>
-            <div class="contact-item-text">
-              <span>Horário de Atendimento</span>
-              <strong>Seg–Sex, 08h–18h</strong>
-            </div>
-          </div>
-        </address>
-      </div>
+        </div>
 
-      <div class="contact-form-wrap reveal-right">
-        <form id="contactForm" novalidate aria-label="Formulário de contato">
-          <div class="form-row">
+        <div class="service-card featured reveal">
+          <div class="service-number" aria-hidden="true">03</div>
+          <div class="service-icon" aria-hidden="true">☀️</div>
+          <h3>Energia Solar Fotovoltaica</h3>
+          <p>
+            Instalação e manutenção de sistemas de energia solar fotovoltaica,
+            incluindo limpeza de placas para máxima eficiência e geração.
+            Reduza até 95% da sua conta de luz.
+          </p>
+          <div class="service-tags" aria-label="Tags: Instalação, Manutenção, Limpeza de placas">
+            <span class="tag">Instalação</span>
+            <span class="tag">Manutenção</span>
+            <span class="tag">Limpeza de placas</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number" aria-hidden="true">04</div>
+          <div class="service-icon" aria-hidden="true">⚡</div>
+          <h3>Serviços Elétricos Residenciais</h3>
+          <p>
+            Serviços elétricos residenciais em geral: instalações, reparos,
+            laudos e adequações. Tudo com segurança, agilidade e mão de obra
+            qualificada.
+          </p>
+          <div class="service-tags" aria-label="Tags: Instalações, Reparos, Residencial">
+            <span class="tag">Instalações</span>
+            <span class="tag">Reparos</span>
+            <span class="tag">Residencial</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" aria-labelledby="contato-titulo">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <span class="section-label" aria-hidden="true">Fale conosco</span>
+          <h2 id="contato-titulo" class="section-title">Pronto para começar a economizar?</h2>
+          <p class="section-desc">
+            Entre em contato pelo formulário ou fale diretamente com a gente
+            pelo WhatsApp. Nossa equipe retorna com um orçamento personalizado.
+          </p>
+
+          <address class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div class="contact-item-text">
+                <span>Endereço</span>
+                <strong>Rua das Palmeiras, 135, Primavera — Serrania/MG</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📞</div>
+              <div class="contact-item-text">
+                <span>Telefone</span>
+                <a href="tel:+5535998618693">(35) 99861-8693</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">💬</div>
+              <div class="contact-item-text">
+                <span>WhatsApp</span>
+                <a href="https://wa.me/5535988982793">(35) 98898-2793</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">✉️</div>
+              <div class="contact-item-text">
+                <span>E-mail</span>
+                <a href="mailto:negoinhooo@hotmail.com">negoinhooo@hotmail.com</a>
+              </div>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" novalidate aria-label="Formulário de contato">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="João Silva"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="nome-error"
+                  aria-invalid="false"
+                />
+                <span id="nome-error" class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="joao@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error"
+                  aria-invalid="false"
+                />
+                <span id="email-error" class="field-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(35) 9 0000-0000"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tipo">Tipo de serviço</label>
+                <select id="tipo" name="tipo">
+                  <option value="" disabled selected>Selecione...</option>
+                  <option value="energia-solar">Energia Solar Fotovoltaica</option>
+                  <option value="aquecedor">Aquecedor Solar</option>
+                  <option value="ar-condicionado">Ar-condicionado</option>
+                  <option value="eletrica">Serviços Elétricos</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+            </div>
+
             <div class="form-group">
-              <label for="nome">Nome completo</label>
-              <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="João Silva"
-                autocomplete="name"
-                required
-                aria-required="true"
-                aria-describedby="nome-error"
-                aria-invalid="false"
-              />
-              <span id="nome-error" class="field-error" role="alert"></span>
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Conte um pouco sobre o que você precisa..."
+                autocomplete="off"
+                maxlength="1000"
+              ></textarea>
             </div>
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="joao@email.com"
-                autocomplete="email"
-                required
-                aria-required="true"
-                aria-describedby="email-error"
-                aria-invalid="false"
-              />
-              <span id="email-error" class="field-error" role="alert"></span>
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="telefone">Telefone / WhatsApp</label>
-              <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="(11) 9 0000-0000"
-                autocomplete="tel"
-              />
-            </div>
-            <div class="form-group">
-              <label for="tipo">Tipo de instalação</label>
-              <select id="tipo" name="tipo">
-                <option value="" disabled selected>Selecione...</option>
-                <option value="residencial">Residencial</option>
-                <option value="comercial">Comercial</option>
-                <option value="industrial">Industrial</option>
-                <option value="rural">Rural / Agro</option>
-                <option value="outro">Outro</option>
-              </select>
-            </div>
-          </div>
+            <button type="submit" class="form-submit">
+              <span aria-hidden="true">☀</span> Enviar Mensagem
+            </button>
 
-          <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              placeholder="Conte um pouco sobre seu projeto — consumo mensal estimado, área disponível, etc."
-              autocomplete="off"
-              maxlength="1000"
-            ></textarea>
-          </div>
+            <div
+              class="toast"
+              id="toast"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></div>
+          </form>
+        </div>
 
-          <button type="submit" class="form-submit">
-            <span aria-hidden="true">☀</span> Enviar Mensagem
-          </button>
-
-          <!-- Sempre no DOM; aria-live anuncia mudanças para leitores de tela -->
-          <div
-            class="toast"
-            id="toast"
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-          ></div>
-        </form>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+      <a href="#hero" class="footer-brand">MN Solar</a>
+      <p class="footer-copy">© 2026 MN Solar. Todos os direitos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer role="contentinfo">
-    <a href="#hero" class="footer-brand">mnSolar</a>
-    <p class="footer-copy">© 2026 mnSolar. Todos os direitos reservados.</p>
-    <ul class="footer-links">
-      <li><a href="#hero">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </footer>
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      // ── Navbar scroll effect ──────────────────────────────────
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 30);
+      }, { passive: true });
 
-  <!-- ===== JAVASCRIPT ===== -->
-  <script>
-    // ── Navbar scroll effect ──────────────────────────────────
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 30);
-    }, { passive: true });
+      // ── Hamburger menu ────────────────────────────────────────
+      const hamburger = document.getElementById('hamburger');
+      const navLinks  = document.getElementById('navLinks');
 
-    // ── Hamburger menu ────────────────────────────────────────
-    const hamburger = document.getElementById('hamburger');
-    const navLinks  = document.getElementById('navLinks');
-
-    function openMenu() {
-      hamburger.classList.add('open');
-      navLinks.classList.add('open');
-      hamburger.setAttribute('aria-expanded', 'true');
-      hamburger.setAttribute('aria-label', 'Fechar menu de navegação');
-    }
-
-    function closeMenu() {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
-    }
-
-    hamburger.addEventListener('click', () => {
-      if (hamburger.classList.contains('open')) {
-        closeMenu();
-      } else {
-        openMenu();
+      function openMenu() {
+        hamburger.classList.add('open');
+        navLinks.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        hamburger.setAttribute('aria-label', 'Fechar menu de navegação');
       }
-    });
 
-    // Fecha com Escape e devolve foco ao botão
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && hamburger.classList.contains('open')) {
-        closeMenu();
-        hamburger.focus();
+      function closeMenu() {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
       }
-    });
 
-    // Fecha ao clicar em qualquer link do menu
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // ── Intersection Observer (reveal animations) ─────────────
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          entry.target.querySelectorAll('.progress-fill').forEach(bar => {
-            bar.style.width = bar.dataset.width + '%';
-          });
-          entry.target.querySelectorAll('[data-target]').forEach(el => {
-            animateCounter(el);
-          });
-          revealObserver.unobserve(entry.target);
+      hamburger.addEventListener('click', () => {
+        if (hamburger.classList.contains('open')) {
+          closeMenu();
+        } else {
+          openMenu();
         }
       });
-    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
-      revealObserver.observe(el);
-    });
-
-    // Observa stats do hero
-    const heroStats = document.querySelector('.hero-stats');
-    if (heroStats) {
-      const statsObserver = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          document.querySelectorAll('[data-target]').forEach(el => animateCounter(el));
-          statsObserver.disconnect();
-        }
-      }, { threshold: 0.5 });
-      statsObserver.observe(heroStats);
-    }
-
-    // ── Counter animation ─────────────────────────────────────
-    function animateCounter(el) {
-      // Respeita prefers-reduced-motion
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        const target = parseInt(el.dataset.target, 10);
-        const suffix = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
-        el.textContent = target + suffix;
-        return;
-      }
-
-      const target   = parseInt(el.dataset.target, 10);
-      const suffix   = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
-      const duration = 1600;
-      const start    = performance.now();
-
-      function update(now) {
-        const elapsed  = now - start;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased    = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(eased * target) + suffix;
-        if (progress < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
-    }
-
-    // ── Contact form ──────────────────────────────────────────
-    const form  = document.getElementById('contactForm');
-    const toast = document.getElementById('toast');
-
-    function setFieldError(input, errorId, message) {
-      const errorEl = document.getElementById(errorId);
-      input.setAttribute('aria-invalid', message ? 'true' : 'false');
-      errorEl.textContent = message;
-    }
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add('show');
-      setTimeout(() => {
-        toast.classList.remove('show');
-        // Limpa após a transição para não reanunciar
-        setTimeout(() => { toast.textContent = ''; }, 350);
-      }, 5000);
-    }
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const nomeInput  = form.nome;
-      const emailInput = form.email;
-      const nome  = nomeInput.value.trim();
-      const email = emailInput.value.trim();
-      let valid = true;
-
-      if (!nome) {
-        setFieldError(nomeInput, 'nome-error', 'Por favor, informe seu nome.');
-        valid = false;
-      } else {
-        setFieldError(nomeInput, 'nome-error', '');
-      }
-
-      if (!email || !emailInput.validity.valid) {
-        setFieldError(emailInput, 'email-error', 'Por favor, informe um e-mail válido.');
-        valid = false;
-      } else {
-        setFieldError(emailInput, 'email-error', '');
-      }
-
-      if (!valid) return;
-
-      const btn = form.querySelector('.form-submit');
-      btn.textContent = '⏳ Enviando...';
-      btn.disabled = true;
-
-      // Substituir pelo fetch/API real em produção
-      setTimeout(() => {
-        btn.innerHTML = '<span aria-hidden="true">☀</span> Enviar Mensagem';
-        btn.disabled = false;
-        showToast('✅ Mensagem enviada! Entraremos em contato em breve.');
-        form.reset();
-        // Limpa aria-invalid após reset
-        [nomeInput, emailInput].forEach(el => el.setAttribute('aria-invalid', 'false'));
-      }, 1200);
-    });
-
-    // ── Smooth active link highlight on scroll ────────────────
-    const sections   = document.querySelectorAll('section[id]');
-    const navAnchors = document.querySelectorAll('.nav-links a:not(.nav-cta)');
-
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navAnchors.forEach(a => {
-            a.style.color = a.getAttribute('href') === '#' + entry.target.id
-              ? 'var(--gold-light)'
-              : '';
-          });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && hamburger.classList.contains('open')) {
+          closeMenu();
+          hamburger.focus();
         }
       });
-    }, { threshold: 0.4 });
 
-    sections.forEach(s => sectionObserver.observe(s));
-  </script>
-</body>
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // ── Intersection Observer (reveal animations) ─────────────
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+              bar.style.width = bar.dataset.width + '%';
+            });
+            entry.target.querySelectorAll('[data-target]').forEach(el => {
+              animateCounter(el);
+            });
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+        revealObserver.observe(el);
+      });
+
+      const heroStats = document.querySelector('.hero-stats');
+      if (heroStats) {
+        const statsObserver = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting) {
+            document.querySelectorAll('[data-target]').forEach(el => animateCounter(el));
+            statsObserver.disconnect();
+          }
+        }, { threshold: 0.5 });
+        statsObserver.observe(heroStats);
+      }
+
+      // ── Counter animation ─────────────────────────────────────
+      function animateCounter(el) {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          const target = parseInt(el.dataset.target, 10);
+          const suffix = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
+          el.textContent = target + suffix;
+          return;
+        }
+
+        const target   = parseInt(el.dataset.target, 10);
+        const suffix   = el.dataset.suffix || (el.dataset.target >= 100 ? '+' : '');
+        const duration = 1600;
+        const start    = performance.now();
+
+        function update(now) {
+          const elapsed  = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased    = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target) + suffix;
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      }
+
+      // ── Contact form ──────────────────────────────────────────
+      const form  = document.getElementById('contactForm');
+      const toast = document.getElementById('toast');
+
+      function setFieldError(input, errorId, message) {
+        const errorEl = document.getElementById(errorId);
+        input.setAttribute('aria-invalid', message ? 'true' : 'false');
+        errorEl.textContent = message;
+      }
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+          setTimeout(() => { toast.textContent = ''; }, 350);
+        }, 5000);
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nomeInput  = form.nome;
+        const emailInput = form.email;
+        const nome  = nomeInput.value.trim();
+        const email = emailInput.value.trim();
+        let valid = true;
+
+        if (!nome) {
+          setFieldError(nomeInput, 'nome-error', 'Por favor, informe seu nome.');
+          valid = false;
+        } else {
+          setFieldError(nomeInput, 'nome-error', '');
+        }
+
+        if (!email || !emailInput.validity.valid) {
+          setFieldError(emailInput, 'email-error', 'Por favor, informe um e-mail válido.');
+          valid = false;
+        } else {
+          setFieldError(emailInput, 'email-error', '');
+        }
+
+        if (!valid) return;
+
+        const btn = form.querySelector('.form-submit');
+        btn.textContent = '⏳ Enviando...';
+        btn.disabled = true;
+
+        setTimeout(() => {
+          btn.innerHTML = '<span aria-hidden="true">☀</span> Enviar Mensagem';
+          btn.disabled = false;
+          showToast('✅ Mensagem enviada! Entraremos em contato em breve.');
+          form.reset();
+          [nomeInput, emailInput].forEach(el => el.setAttribute('aria-invalid', 'false'));
+        }, 1200);
+      });
+
+      // ── Active link highlight on scroll ──────────────────────
+      const sections   = document.querySelectorAll('section[id]');
+      const navAnchors = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navAnchors.forEach(a => {
+              a.style.color = a.getAttribute('href') === '#' + entry.target.id
+                ? 'var(--gold-light)'
+                : '';
+            });
+          }
+        });
+      }, { threshold: 0.4 });
+
+      sections.forEach(s => sectionObserver.observe(s));
+    </script>
+  </body>
 </html>
