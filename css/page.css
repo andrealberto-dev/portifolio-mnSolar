@@ -829,23 +829,9 @@ footer {
 }
 
 /* ── RESPONSIVE ──────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
 
-  .hero-stats {
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 680px) {
-  :root {
-    --nav-h: 64px;
-  }
-
+/* ── Tablet largo (≤1024px): navbar passa para hamburger ── */
+@media (max-width: 1024px) {
   .nav-links {
     position: fixed;
     top: var(--nav-h);
@@ -860,6 +846,7 @@ footer {
     transform: translateY(-110%);
     transition: transform var(--transition);
     pointer-events: none;
+    z-index: 999;
   }
 
   .nav-links.open {
@@ -888,30 +875,176 @@ footer {
   .hamburger {
     display: flex;
   }
+}
 
-  .hero-stats {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+/* ── Tablet (≤900px): grids de 1 coluna, stats 2×2 ─────── */
+@media (max-width: 900px) {
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
+  /* Stats: de linha para grade 2×2 */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
+    border-top: 1px solid var(--border);
+    padding-top: 3rem;
+    margin-top: 4rem;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  /* About: painel ocupa menos espaço */
+  .about-panel {
+    padding: 2rem;
+  }
+
+  /* Contact: formulário com padding menor */
+  .contact-form-wrap {
+    padding: 2rem;
+  }
+
+  /* Feature items: garante que texto não ultrapasse */
+  .feature-item {
+    overflow: hidden;
+  }
+
+  .feature-text p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+/* ── Mobile (≤680px) ─────────────────────────────────────── */
+@media (max-width: 680px) {
+  :root {
+    --nav-h: 64px;
+  }
+
+  section {
+    padding: 5rem 5%;
+  }
+
+  /* Stats: mantém 2×2 */
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+
+  /* About: menos padding */
+  .about-panel {
+    padding: 1.5rem;
+  }
+
+  .solar-icon-wrap {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+
+  /* Form: 1 coluna e menos padding */
   .form-row {
     grid-template-columns: 1fr;
   }
 
+  .contact-form-wrap {
+    padding: 1.5rem;
+  }
+
+  /* Footer: empilha */
   footer {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 5%;
+  }
+
+  /* WhatsApp: afasta da borda inferior */
+  .whatsapp-float {
+    bottom: 1.25rem;
+    right: 1.25rem;
   }
 }
 
-@media (max-width: 400px) {
+/* ── Mobile pequeno (≤480px) ─────────────────────────────── */
+@media (max-width: 480px) {
   section {
-    padding: 5rem 4%;
+    padding: 4rem 4%;
+  }
+
+  .hero-title {
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Stats: ainda 2×2 mas menor */
+  .hero-stats {
+    gap: 1rem 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+  }
+
+  .about-panel {
+    padding: 1.25rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .contact-form-wrap {
+    padding: 1.25rem;
+  }
+}
+
+/* ── Telas muito pequenas (≤360px) ───────────────────────── */
+@media (max-width: 360px) {
+  /* Stats: passa para 1 coluna em telas minúsculas */
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .whatsapp-float {
+    width: 48px;
+    height: 48px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
   }
 }
