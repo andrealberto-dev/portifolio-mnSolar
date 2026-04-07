@@ -843,7 +843,7 @@ footer {
     padding: 1.5rem 5%;
     gap: 0;
     border-bottom: 1px solid var(--border);
-    transform: translateY(-110%);
+    transform: translateY(calc(-100% - var(--nav-h)));
     transition: transform var(--transition);
     pointer-events: none;
     z-index: 999;
