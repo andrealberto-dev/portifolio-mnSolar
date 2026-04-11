@@ -3,496 +3,656 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MN Solar — Energia Solar Inteligente</title>
+
+    <!-- ── Identidade ─────────────────────────────────────── -->
+    <title>MN Solar — Energia Solar Inteligente em Serrania/MG</title>
     <meta
       name="description"
-      content="A MN Solar oferece instalação e manutenção de energia solar, aquecedores solares, ar-condicionado e serviços elétricos residenciais em Serrania/MG. Fale conosco!"
+      content="A MN Solar oferece instalação e manutenção de energia solar fotovoltaica, aquecedores solares, ar-condicionado e serviços elétricos residenciais em Serrania/MG. Solicite um orçamento grátis!"
     />
-    <!-- Segurança: restringe origens de scripts, estilos e fontes (CSP) -->
+    <meta
+      name="keywords"
+      content="energia solar, painel solar, aquecedor solar, ar condicionado, serviços elétricos, Serrania MG, instalação solar, economia energia"
+    />
+    <meta name="author" content="MN Solar" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mnsolar.com.br/" />
+
+    <!-- ── Open Graph (Facebook, WhatsApp, LinkedIn) ─────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mnsolar.com.br/" />
+    <meta
+      property="og:title"
+      content="MN Solar — Energia Solar Inteligente em Serrania/MG"
+    />
+    <meta
+      property="og:description"
+      content="Instalação e manutenção de energia solar fotovoltaica, aquecedores solares, ar-condicionado e serviços elétricos. Reduza até 95% da sua conta de luz!"
+    />
+    <meta
+      property="og:image"
+      content="https://mnsolar.com.br/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MN Solar — Energia Solar Inteligente" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="MN Solar" />
+
+    <!-- ── Twitter Card ───────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mnsolar.com.br/" />
+    <meta
+      name="twitter:title"
+      content="MN Solar — Energia Solar Inteligente em Serrania/MG"
+    />
+    <meta
+      name="twitter:description"
+      content="Instalação e manutenção de energia solar fotovoltaica, aquecedores solares, ar-condicionado e serviços elétricos. Reduza até 95% da sua conta de luz!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://mnsolar.com.br/og-image.png"
+    />
+    <meta name="twitter:image:alt" content="MN Solar — Energia Solar Inteligente" />
+
+    <!-- ── PWA / Tema ─────────────────────────────────────── -->
+    <meta name="theme-color" content="#f5a623" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MN Solar" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- ── Segurança ──────────────────────────────────────── -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.web3forms.com; img-src 'self' data:; frame-ancestors 'none';"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://api.web3forms.com; img-src 'self' data: https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com;"
     />
-    <!-- Não envia URL completo como referrer para sites externos -->
     <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+    <!-- ── Performance: preconnect + preload ─────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="style.css" as="style" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+      as="style"
       crossorigin="anonymous"
     />
+
+    <!-- ── Estilos ────────────────────────────────────────── -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      crossorigin="anonymous"
+    />
+
+    <!-- ── Structured Data (JSON-LD) ─────────────────────── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MN Solar",
+        "description": "Instalação e manutenção de energia solar fotovoltaica, aquecedores solares, ar-condicionado e serviços elétricos residenciais em Serrania/MG.",
+        "url": "https://mnsolar.com.br",
+        "telephone": "+5535998618693",
+        "email": "negoinhooo@hotmail.com",
+        "foundingDate": "2010",
+        "priceRange": "$$",
+        "image": "https://mnsolar.com.br/og-image.png",
+        "logo": "https://mnsolar.com.br/og-image.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua das Palmeiras, 135, Primavera",
+          "addressLocality": "Serrania",
+          "addressRegion": "MG",
+          "postalCode": "37790-000",
+          "addressCountry": "BR"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+5535998618693",
+            "contactType": "customer service",
+            "availableLanguage": "Portuguese"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+5535988982793",
+            "contactType": "sales",
+            "availableLanguage": "Portuguese"
+          }
+        ],
+        "sameAs": [
+          "https://wa.me/5535988982793"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços MN Solar",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Instalação de Energia Solar Fotovoltaica",
+                "description": "Instalação e manutenção de sistemas de energia solar fotovoltaica, incluindo limpeza de placas para máxima eficiência."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aquecedores Solares",
+                "description": "Instalação e manutenção de aquecedores solares com 14 anos de experiência."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ar-condicionado",
+                "description": "Instalação, manutenção preventiva e corretiva, e higienização completa de ar-condicionado."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Serviços Elétricos Residenciais",
+                "description": "Instalações, reparos, laudos e adequações elétricas residenciais."
+              }
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
-    <!-- ===== NAVBAR ===== -->
-    <nav id="navbar" aria-label="Navegação principal">
-      <a href="#hero" class="nav-brand">MN Solar</a>
+    <!-- Skip navigation — acessibilidade para teclado (WCAG 2.4.1) -->
+    <a href="#conteudo-principal" class="skip-nav">Pular para o conteúdo</a>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#contato" class="nav-cta">Solicitar Orçamento</a></li>
-      </ul>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header>
+      <nav id="navbar" aria-label="Navegação principal">
+        <a href="#hero" class="nav-brand" aria-label="MN Solar — página inicial">MN Solar</a>
 
-      <button
-        class="hamburger"
-        id="hamburger"
-        aria-label="Abrir menu de navegação"
-        aria-controls="navLinks"
-        aria-expanded="false"
-      >
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contato" class="nav-cta">Solicitar Orçamento</a></li>
+        </ul>
 
-    <!-- ===== HERO ===== -->
-    <section id="hero" aria-labelledby="hero-titulo">
-      <div class="hero-bg" aria-hidden="true"></div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-controls="navLinks"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
 
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span aria-hidden="true">☀</span> Energia Limpa &amp; Renovável
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main id="conteudo-principal">
+      <!-- ===== HERO ===== -->
+      <section id="hero" aria-labelledby="hero-titulo">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span aria-hidden="true">☀</span> Energia Limpa &amp; Renovável
+          </div>
+
+          <h1 id="hero-titulo" class="hero-title">
+            Conforto, economia<br />e <em>energia limpa</em> para você
+          </h1>
+
+          <p class="hero-subtitle">
+            Instalação e manutenção de energia solar, aquecedores solares,
+            ar-condicionado e serviços elétricos residenciais em Serrania/MG e
+            região.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contato" class="btn-primary">
+              <span aria-hidden="true">⚡</span> Solicitar Orçamento Grátis
+            </a>
+            <a href="#servicos" class="btn-outline">
+              Ver Serviços <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Números da MN Solar">
+            <div class="stat-item">
+              <span
+                class="stat-value"
+                data-target="14"
+                data-suffix=" anos"
+                aria-label="14 anos de experiência"
+                >0 anos</span
+              >
+              <span class="stat-label" aria-hidden="true">De Experiência</span>
+            </div>
+            <div class="stat-item">
+              <span
+                class="stat-value"
+                data-target="6"
+                data-suffix=" anos"
+                aria-label="6 anos em energia solar"
+                >0 anos</span
+              >
+              <span class="stat-label" aria-hidden="true">Em Energia Solar</span>
+            </div>
+            <div class="stat-item">
+              <span
+                class="stat-value"
+                data-target="95"
+                data-suffix="%"
+                aria-label="Até 95% de redução na conta de energia"
+                >0%</span
+              >
+              <span class="stat-label" aria-hidden="true">Redução na Conta</span>
+            </div>
+            <div class="stat-item">
+              <span
+                class="stat-value"
+                data-target="25"
+                data-suffix=" anos"
+                aria-label="25 anos de garantia dos painéis"
+                >0 anos</span
+              >
+              <span class="stat-label" aria-hidden="true">Garantia dos Painéis</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <h1 id="hero-titulo" class="hero-title">
-          Conforto, economia<br />e <em>energia limpa</em> para você
-        </h1>
+      <!-- ===== SOBRE ===== -->
+      <section id="sobre" aria-labelledby="sobre-titulo">
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-panel">
+              <div class="solar-icon-wrap" aria-hidden="true">☀️</div>
+              <h3>Tradição e qualidade que você pode confiar</h3>
+              <p>
+                Com mais de uma década de atuação, a MN Solar acumulou experiência
+                e confiança para oferecer soluções completas em energia solar,
+                aquecimento e climatização para famílias e negócios da região.
+              </p>
 
-        <p class="hero-subtitle">
-          Instalação e manutenção de energia solar, aquecedores solares,
-          ar-condicionado e serviços elétricos residenciais em Serrania/MG e
-          região.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#contato" class="btn-primary">
-            <span aria-hidden="true">⚡</span> Solicitar Orçamento Grátis
-          </a>
-          <a href="#servicos" class="btn-outline">
-            Ver Serviços <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span
-              class="stat-value"
-              data-target="14"
-              data-suffix=" anos"
-              aria-label="14 anos de experiência"
-              >0 anos</span
-            >
-            <span class="stat-label" aria-hidden="true">De Experiência</span>
+              <div class="progress-list" role="list" aria-label="Anos de experiência por área">
+                <div class="progress-item" role="listitem">
+                  <div class="progress-head">
+                    <span>Aquecedores Solares</span>
+                    <span>14 anos</span>
+                  </div>
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="14 anos de experiência em aquecedores solares"
+                  >
+                    <div class="progress-fill" data-width="95"></div>
+                  </div>
+                </div>
+                <div class="progress-item" role="listitem">
+                  <div class="progress-head">
+                    <span>Energia Solar Fotovoltaica</span>
+                    <span>6 anos</span>
+                  </div>
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="6 anos de experiência em energia solar fotovoltaica"
+                  >
+                    <div class="progress-fill" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="progress-item" role="listitem">
+                  <div class="progress-head">
+                    <span>Ar-condicionado &amp; Elétrica</span>
+                    <span>6 anos</span>
+                  </div>
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="6 anos de experiência em ar-condicionado e elétrica"
+                  >
+                    <div class="progress-fill" data-width="70"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="stat-item">
-            <span
-              class="stat-value"
-              data-target="6"
-              data-suffix=" anos"
-              aria-label="6 anos em energia solar"
-              >0 anos</span
-            >
-            <span class="stat-label" aria-hidden="true">Em Energia Solar</span>
-          </div>
-          <div class="stat-item">
-            <span
-              class="stat-value"
-              data-target="95"
-              data-suffix="%"
-              aria-label="Até 95% de redução na conta de energia"
-              >0%</span
-            >
-            <span class="stat-label" aria-hidden="true">Redução na Conta</span>
-          </div>
-          <div class="stat-item">
-            <span
-              class="stat-value"
-              data-target="25"
-              data-suffix=" anos"
-              aria-label="25 anos de garantia dos painéis"
-              >0 anos</span
-            >
-            <span class="stat-label" aria-hidden="true"
-              >Garantia dos Painéis</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== SOBRE ===== -->
-    <section id="sobre" aria-labelledby="sobre-titulo">
-      <div class="about-grid">
-        <div class="about-visual reveal-left">
-          <div class="about-panel">
-            <div class="solar-icon-wrap" aria-hidden="true">☀️</div>
-            <h3>Tradição e qualidade que você pode confiar</h3>
-            <p>
-              Com mais de uma década de atuação, a MN Solar acumulou experiência
-              e confiança para oferecer soluções completas em energia solar,
-              aquecimento e climatização para famílias e negócios da região.
+          <div class="about-text reveal-right">
+            <span class="section-label" aria-hidden="true">Sobre nós</span>
+            <h2 id="sobre-titulo" class="section-title">
+              Mais de 14 anos cuidando do seu lar e da sua economia
+            </h2>
+            <p class="section-desc">
+              A MN Solar nasceu do compromisso com a qualidade e com o bem-estar
+              das famílias de Serrania e região. Há 14 anos instalamos e mantemos
+              aquecedores solares, tornando o banho quente acessível e econômico
+              para centenas de residências.
             </p>
 
-            <div class="progress-list">
-              <div class="progress-item">
-                <div class="progress-head">
-                  <span>Aquecedores Solares</span>
-                  <span>14 anos</span>
-                </div>
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  aria-label="14 anos de experiência em aquecedores solares"
-                >
-                  <div class="progress-fill" data-width="95"></div>
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">🌱</div>
+                <div class="feature-text">
+                  <h4>Referência regional em energia solar</h4>
+                  <p>
+                    Com 6 anos de atuação em painéis fotovoltaicos, somos
+                    referência na instalação e manutenção de sistemas de energia
+                    solar na região de Serrania/MG.
+                  </p>
                 </div>
               </div>
-              <div class="progress-item">
-                <div class="progress-head">
-                  <span>Energia Solar Fotovoltaica</span>
-                  <span>6 anos</span>
-                </div>
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  aria-label="6 anos de experiência em energia solar fotovoltaica"
-                >
-                  <div class="progress-fill" data-width="70"></div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">🤝</div>
+                <div class="feature-text">
+                  <h4>Atendimento próximo e personalizado</h4>
+                  <p>
+                    Somos uma empresa local, com atendimento direto, sem
+                    intermediários. Cada projeto é tratado com atenção e cuidado
+                    do início ao fim.
+                  </p>
                 </div>
               </div>
-              <div class="progress-item">
-                <div class="progress-head">
-                  <span>Ar-condicionado &amp; Elétrica</span>
-                  <span>6 anos</span>
-                </div>
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  aria-label="6 anos de experiência em ar-condicionado e elétrica"
-                >
-                  <div class="progress-fill" data-width="70"></div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">🔧</div>
+                <div class="feature-text">
+                  <h4>Soluções completas em um só lugar</h4>
+                  <p>
+                    Da energia solar ao ar-condicionado e elétrica residencial,
+                    resolvemos tudo com a mesma equipe de confiança que já atende
+                    sua família.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="about-text reveal-right">
-          <span class="section-label" aria-hidden="true">Sobre nós</span>
-          <h2 id="sobre-titulo" class="section-title">
-            Mais de 14 anos cuidando do seu lar e da sua economia
+      <!-- ===== SERVIÇOS ===== -->
+      <section id="servicos" aria-labelledby="servicos-titulo">
+        <div class="services-header reveal">
+          <span class="section-label" aria-hidden="true">O que fazemos</span>
+          <h2 id="servicos-titulo" class="section-title">
+            Soluções completas para o seu lar
           </h2>
           <p class="section-desc">
-            A MN Solar nasceu do compromisso com a qualidade e com o bem-estar
-            das famílias de Serrania e região. Há 14 anos instalamos e mantemos
-            aquecedores solares, tornando o banho quente acessível e econômico
-            para centenas de residências.
+            Da energia solar ao ar-condicionado, oferecemos instalação, manutenção
+            e suporte técnico com qualidade e compromisso.
           </p>
-
-          <div class="about-features">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🌱</div>
-              <div class="feature-text">
-                <h4>Referência regional em energia solar</h4>
-                <p>
-                  Com 6 anos de atuação em painéis fotovoltaicos, somos
-                  referência na instalação e manutenção de sistemas de energia
-                  solar na região de Serrania/MG.
-                </p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🤝</div>
-              <div class="feature-text">
-                <h4>Atendimento próximo e personalizado</h4>
-                <p>
-                  Somos uma empresa local, com atendimento direto, sem
-                  intermediários. Cada projeto é tratado com atenção e cuidado
-                  do início ao fim.
-                </p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🔧</div>
-              <div class="feature-text">
-                <h4>Soluções completas em um só lugar</h4>
-                <p>
-                  Da energia solar ao ar-condicionado e elétrica residencial,
-                  resolvemos tudo com a mesma equipe de confiança que já atende
-                  sua família.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SERVIÇOS ===== -->
-    <section id="servicos" aria-labelledby="servicos-titulo">
-      <div class="services-header reveal">
-        <span class="section-label" aria-hidden="true">O que fazemos</span>
-        <h2 id="servicos-titulo" class="section-title">
-          Soluções completas para o seu lar
-        </h2>
-        <p class="section-desc">
-          Da energia solar ao ar-condicionado, oferecemos instalação, manutenção
-          e suporte técnico com qualidade e compromisso.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-number" aria-hidden="true">01</div>
-          <div class="service-icon" aria-hidden="true">❄️</div>
-          <h3>Ar-condicionado</h3>
-          <p>
-            Instalação, manutenção preventiva e corretiva, e higienização
-            completa de ar-condicionado para garantir conforto e qualidade do ar
-            na sua casa ou comércio.
-          </p>
-          <div
-            class="service-tags"
-            aria-label="Tags: Instalação, Manutenção, Higienização"
-          >
-            <span class="tag">Instalação</span>
-            <span class="tag">Manutenção</span>
-            <span class="tag">Higienização</span>
-          </div>
         </div>
 
-        <div class="service-card featured reveal">
-          <div class="service-number" aria-hidden="true">02</div>
-          <div class="service-icon" aria-hidden="true">🌡️</div>
-          <h3>Aquecedores Solares</h3>
-          <p>
-            Instalação e manutenção de aquecedores solares com 14 anos de
-            experiência. Reduza o consumo de energia elétrica e tenha água
-            quente o dia todo de forma econômica e sustentável.
-          </p>
-          <div
-            class="service-tags"
-            aria-label="Tags: 14 anos de experiência, Economia, Sustentável"
-          >
-            <span class="tag">14 anos de experiência</span>
-            <span class="tag">Economia</span>
-            <span class="tag">Sustentável</span>
-          </div>
-        </div>
-
-        <div class="service-card featured reveal">
-          <div class="service-number" aria-hidden="true">03</div>
-          <div class="service-icon" aria-hidden="true">☀️</div>
-          <h3>Energia Solar Fotovoltaica</h3>
-          <p>
-            Instalação e manutenção de sistemas de energia solar fotovoltaica,
-            incluindo limpeza de placas para máxima eficiência e geração. Reduza
-            até 95% da sua conta de luz.
-          </p>
-          <div
-            class="service-tags"
-            aria-label="Tags: Instalação, Manutenção, Limpeza de placas"
-          >
-            <span class="tag">Instalação</span>
-            <span class="tag">Manutenção</span>
-            <span class="tag">Limpeza de placas</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-number" aria-hidden="true">04</div>
-          <div class="service-icon" aria-hidden="true">⚡</div>
-          <h3>Serviços Elétricos Residenciais</h3>
-          <p>
-            Serviços elétricos residenciais em geral: instalações, reparos,
-            laudos e adequações. Tudo com segurança, agilidade e mão de obra
-            qualificada.
-          </p>
-          <div
-            class="service-tags"
-            aria-label="Tags: Instalações, Reparos, Residencial"
-          >
-            <span class="tag">Instalações</span>
-            <span class="tag">Reparos</span>
-            <span class="tag">Residencial</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTATO ===== -->
-    <section id="contato" aria-labelledby="contato-titulo">
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <span class="section-label" aria-hidden="true">Fale conosco</span>
-          <h2 id="contato-titulo" class="section-title">
-            Pronto para começar a economizar?
-          </h2>
-          <p class="section-desc">
-            Entre em contato pelo formulário ou fale diretamente com a gente
-            pelo WhatsApp. Nossa equipe retorna com um orçamento personalizado.
-          </p>
-
-          <address class="contact-items">
-            <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">📍</div>
-              <div class="contact-item-text">
-                <span>Endereço</span>
-                <strong>Rua das Palmeiras, 135, Primavera — Serrania/MG</strong>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">📞</div>
-              <div class="contact-item-text">
-                <span>Telefone</span>
-                <a href="tel:+5535998618693">(35) 99861-8693</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">💬</div>
-              <div class="contact-item-text">
-                <span>WhatsApp</span>
-                <a href="https://wa.me/5535988982793">(35) 98898-2793</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon" aria-hidden="true">✉️</div>
-              <div class="contact-item-text">
-                <span>E-mail</span>
-                <a href="mailto:negoinhooo@hotmail.com"
-                  >negoinhooo@hotmail.com</a
-                >
-              </div>
-            </div>
-          </address>
-        </div>
-
-        <div class="contact-form-wrap reveal-right">
-          <form id="contactForm" novalidate aria-label="Formulário de contato">
-            <input
-              type="hidden"
-              name="access_key"
-              value="9e1de1a0-a302-46d0-a8a2-f2af0df19b44"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="Novo contato — MN Solar"
-            />
-            <input type="hidden" name="from_name" value="Site MN Solar" />
-            <!-- Honeypot anti-spam: bots preenchem, humanos não veem -->
-            <input
-              type="checkbox"
-              name="botcheck"
-              style="display: none"
-              tabindex="-1"
-              aria-hidden="true"
-            />
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nome">Nome completo</label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  placeholder="João Silva"
-                  autocomplete="name"
-                  required
-                  aria-required="true"
-                  aria-describedby="nome-error"
-                  aria-invalid="false"
-                />
-                <span id="nome-error" class="field-error" role="alert"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="joao@email.com"
-                  autocomplete="email"
-                  required
-                  aria-required="true"
-                  aria-describedby="email-error"
-                  aria-invalid="false"
-                />
-                <span id="email-error" class="field-error" role="alert"></span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="telefone">Telefone / WhatsApp</label>
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="(35) 9 0000-0000"
-                  autocomplete="tel"
-                />
-              </div>
-              <div class="form-group">
-                <label for="tipo">Tipo de serviço</label>
-                <select id="tipo" name="tipo">
-                  <option value="" disabled selected>Selecione...</option>
-                  <option value="energia-solar">
-                    Energia Solar Fotovoltaica
-                  </option>
-                  <option value="aquecedor">Aquecedor Solar</option>
-                  <option value="ar-condicionado">Ar-condicionado</option>
-                  <option value="eletrica">Serviços Elétricos</option>
-                  <option value="outro">Outro</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                placeholder="Conte um pouco sobre o que você precisa..."
-                autocomplete="off"
-                maxlength="1000"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="form-submit">
-              <span aria-hidden="true">☀</span> Enviar Mensagem
-            </button>
-
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div class="service-icon" aria-hidden="true">❄️</div>
+            <h3>Ar-condicionado</h3>
+            <p>
+              Instalação, manutenção preventiva e corretiva, e higienização
+              completa de ar-condicionado para garantir conforto e qualidade do ar
+              na sua casa ou comércio.
+            </p>
             <div
-              class="toast"
-              id="toast"
-              role="status"
-              aria-live="polite"
-              aria-atomic="true"
-            ></div>
-          </form>
+              class="service-tags"
+              aria-label="Serviços: Instalação, Manutenção, Higienização"
+            >
+              <span class="tag">Instalação</span>
+              <span class="tag">Manutenção</span>
+              <span class="tag">Higienização</span>
+            </div>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-number" aria-hidden="true">02</div>
+            <div class="service-icon" aria-hidden="true">🌡️</div>
+            <h3>Aquecedores Solares</h3>
+            <p>
+              Instalação e manutenção de aquecedores solares com 14 anos de
+              experiência. Reduza o consumo de energia elétrica e tenha água
+              quente o dia todo de forma econômica e sustentável.
+            </p>
+            <div
+              class="service-tags"
+              aria-label="Serviços: 14 anos de experiência, Economia, Sustentável"
+            >
+              <span class="tag">14 anos de experiência</span>
+              <span class="tag">Economia</span>
+              <span class="tag">Sustentável</span>
+            </div>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div class="service-icon" aria-hidden="true">☀️</div>
+            <h3>Energia Solar Fotovoltaica</h3>
+            <p>
+              Instalação e manutenção de sistemas de energia solar fotovoltaica,
+              incluindo limpeza de placas para máxima eficiência e geração. Reduza
+              até 95% da sua conta de luz.
+            </p>
+            <div
+              class="service-tags"
+              aria-label="Serviços: Instalação, Manutenção, Limpeza de placas"
+            >
+              <span class="tag">Instalação</span>
+              <span class="tag">Manutenção</span>
+              <span class="tag">Limpeza de placas</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number" aria-hidden="true">04</div>
+            <div class="service-icon" aria-hidden="true">⚡</div>
+            <h3>Serviços Elétricos Residenciais</h3>
+            <p>
+              Serviços elétricos residenciais em geral: instalações, reparos,
+              laudos e adequações. Tudo com segurança, agilidade e mão de obra
+              qualificada.
+            </p>
+            <div
+              class="service-tags"
+              aria-label="Serviços: Instalações, Reparos, Residencial"
+            >
+              <span class="tag">Instalações</span>
+              <span class="tag">Reparos</span>
+              <span class="tag">Residencial</span>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- ===== CONTATO ===== -->
+      <section id="contato" aria-labelledby="contato-titulo">
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <span class="section-label" aria-hidden="true">Fale conosco</span>
+            <h2 id="contato-titulo" class="section-title">
+              Pronto para começar a economizar?
+            </h2>
+            <p class="section-desc">
+              Entre em contato pelo formulário ou fale diretamente com a gente
+              pelo WhatsApp. Nossa equipe retorna com um orçamento personalizado.
+            </p>
+
+            <address class="contact-items">
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📍</div>
+                <div class="contact-item-text">
+                  <span>Endereço</span>
+                  <strong>Rua das Palmeiras, 135, Primavera — Serrania/MG</strong>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">📞</div>
+                <div class="contact-item-text">
+                  <span>Telefone</span>
+                  <a href="tel:+5535998618693">(35) 99861-8693</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">💬</div>
+                <div class="contact-item-text">
+                  <span>WhatsApp</span>
+                  <a
+                    href="https://wa.me/5535988982793"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >(35) 98898-2793</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon" aria-hidden="true">✉️</div>
+                <div class="contact-item-text">
+                  <span>E-mail</span>
+                  <a href="mailto:negoinhooo@hotmail.com">negoinhooo@hotmail.com</a>
+                </div>
+              </div>
+            </address>
+          </div>
+
+          <div class="contact-form-wrap reveal-right">
+            <form
+              id="contactForm"
+              novalidate
+              aria-label="Formulário de contato"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="9e1de1a0-a302-46d0-a8a2-f2af0df19b44"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="Novo contato — MN Solar"
+              />
+              <input type="hidden" name="from_name" value="Site MN Solar" />
+              <!-- Honeypot anti-spam -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                tabindex="-1"
+                aria-hidden="true"
+              />
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">Nome completo</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="João Silva"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="nome-error"
+                    aria-invalid="false"
+                  />
+                  <span id="nome-error" class="field-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="joao@email.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-error"
+                    aria-invalid="false"
+                  />
+                  <span id="email-error" class="field-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefone">Telefone / WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(35) 9 0000-0000"
+                    autocomplete="tel"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tipo">Tipo de serviço</label>
+                  <select id="tipo" name="tipo" aria-label="Selecione o tipo de serviço">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="energia-solar">Energia Solar Fotovoltaica</option>
+                    <option value="aquecedor">Aquecedor Solar</option>
+                    <option value="ar-condicionado">Ar-condicionado</option>
+                    <option value="eletrica">Serviços Elétricos</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Conte um pouco sobre o que você precisa..."
+                  autocomplete="off"
+                  maxlength="1000"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">
+                <span aria-hidden="true">☀</span> Enviar Mensagem
+              </button>
+
+              <div
+                class="toast"
+                id="toast"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- ===== WHATSAPP FLUTUANTE ===== -->
     <a
-      href="https://wa.me/5535988982793?text=Olá,%20gostaria%20de%20um%20orçamento"
+      href="https://wa.me/5535988982793?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento"
       class="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar no WhatsApp"
+      aria-label="Falar com a MN Solar pelo WhatsApp"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -501,6 +661,7 @@
         aria-hidden="true"
         width="28"
         height="28"
+        focusable="false"
       >
         <path
           d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
@@ -512,15 +673,19 @@
     </a>
 
     <!-- ===== FOOTER ===== -->
-    <footer role="contentinfo">
-      <a href="#hero" class="footer-brand">MN Solar</a>
-      <p class="footer-copy">© 2026 MN Solar. Todos os direitos reservados.</p>
-      <ul class="footer-links">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <footer>
+      <a href="#hero" class="footer-brand" aria-label="MN Solar — voltar ao topo">MN Solar</a>
+      <p class="footer-copy">
+        &copy; <time datetime="2026">2026</time> MN Solar. Todos os direitos reservados.
+      </p>
+      <nav aria-label="Links do rodapé">
+        <ul class="footer-links" role="list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </footer>
 
     <script src="script.js" defer></script>
